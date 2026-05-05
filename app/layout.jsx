@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Sajid Yaqub - MERN Stack Developer Portfolio",
-  description: "Modern portfolio of Sajid Yaqub, a MERN Stack Developer specializing in scalable full-stack applications.",
+  title: "Zakaria Hossain MERN Stack Developer Portfolio",
+  description: "Modern portfolio of Zakaria Hossain, a MERN Stack Developer specializing in scalable full-stack applications.",
 };
 
 export default function RootLayout({ children }) {
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
           <footer className="py-10 text-center text-gray-500 text-sm border-t border-white/5">
-            <p>© {new Date().getFullYear()} Sajid Yaqub Portfolio. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Zakaria Hossain Portfolio. All rights reserved.</p>
           </footer>
         </SmoothScroll>
       </body>

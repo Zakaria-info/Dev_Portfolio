@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { Download } from 'lucide-react';
+import { portfolioData } from '@/data/portfolio';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,6 +11,7 @@ const About = () => {
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
   const contentRef = useRef(null);
+  const { profile } = portfolioData;
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -50,9 +52,9 @@ const About = () => {
         <div ref={imageRef} className="order-2 md:order-1 flex justify-center">
           <div className="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl group border border-white/10">
             <img 
-              alt="Sajid Yaqub" 
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" 
-              src="https://lh3.googleusercontent.com/aida/ADBb0ugmxfBbdE2XE5udNjV-PSqR54i7ODVhnqcUdVa4OGDkcFvKBcE6yojBlqV2PK6nOeTLNNbPdten7N_vsJje3BdxOfFT8gaJUvZI0DHvGBIHJ-qNIzUspa-6srBFYYReaqiofsflFKWy1ClamnwIYOpBTw9jsKcYTFZvE-PkeFI9-ydzhjxrAeWaNhItthnNJC_yvfvysRp3ukdsypdu4YGkItis6oDHthLMX1YOvfkCdcCEqTrodtcfAhrwKKNQP1wOuWBl1EjlPg" 
+              alt={profile.name} 
+              className="w-full h-full object-cover transition-all duration-700 scale-110 group-hover:scale-100" 
+              src={profile.image} 
             />
             <div className="absolute inset-0 bg-gradient-to-t from-dark-navy/80 via-transparent to-transparent opacity-60"></div>
           </div>
@@ -64,17 +66,20 @@ const About = () => {
           <h2 className="text-4xl font-bold">About Me</h2>
           <div className="space-y-4 text-gray-400 leading-relaxed text-lg">
             <p>
-              I am a MERN Stack Web Developer focusing on building production-ready applications. I enjoy designing APIs, creating interactive user interfaces, and optimizing performance to deliver smooth and efficient user experiences.
+              I am a {profile.role} focusing on building production-ready applications. I enjoy designing APIs, creating interactive user interfaces, and optimizing performance to deliver smooth and efficient user experiences.
             </p>
             <p>
               Along with strong problem-solving skills, I follow clean architecture principles and modern development patterns. I'm passionate about writing maintainable code, improving UI/UX flows, and building applications that feel fast, secure, and intuitive.
             </p>
           </div>
           <div className="pt-6">
-            <button className="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-accent-blue to-accent-pink rounded-full font-bold shadow-xl shadow-accent-pink/20 hover:scale-105 transition-transform group">
+            <a 
+              href={profile.resumeLink} 
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-accent-blue to-accent-pink rounded-full font-bold shadow-xl shadow-accent-pink/20 hover:scale-105 transition-transform group"
+            >
               <span>Download Resume</span>
               <Download size={20} className="group-hover:translate-y-1 transition-transform" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
