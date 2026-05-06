@@ -11,7 +11,10 @@ const Skills = () => {
     "React": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "Node.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     "MongoDB": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    "HTML": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+    "Authentication": "https://img.icons8.com/ios-filled/100/3b82f6/lock.png",
+    "SEO Optimization": "https://img.icons8.com/ios-filled/100/3b82f6/search--v1.png",
+    "Postman": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+    "Manual Testing": "https://img.icons8.com/ios-filled/100/3b82f6/checkmark--v1.png"
   };
 
   return (

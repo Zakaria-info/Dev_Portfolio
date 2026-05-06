@@ -3,7 +3,8 @@ export const portfolioData = {
     name: "Zakaria Hossain",
     role: "MERN Stack Developer",
     description: "I build scalable full-stack applications using React, Node.js, Express and MongoDB. I love clean code and fast UIs.",
-    image: "https://i.ibb.co.com/twwQS3CF/formal-image.png",
+    image: "/hero-image.png",
+    aboutImage: "/about-image.png",
     resumeLink: "https://drive.google.com/file/d/1bUkPO8W4zAehxVJhgzOKsCZpRFQM6G8d/view?usp=drive_link"
   },
   skills: [
@@ -33,9 +34,24 @@ export const portfolioData = {
       iconName: "Database"
     },
     {
-      title: "HTML",
-      desc: "Creating clean, well-structured page layouts with semantic markup for better accessibility and SEO.",
-      iconName: "FileCode"
+      title: "Authentication",
+      desc: "Implementing secure login systems, JWT, and OAuth for protected user data.",
+      iconName: "Lock"
+    },
+    {
+      title: "SEO Optimization",
+      desc: "Optimizing web apps for search engines, performance, and accessibility.",
+      iconName: "Globe"
+    },
+    {
+      title: "Postman",
+      desc: "Testing and documenting REST APIs to ensure robust backend communication.",
+      iconName: "Terminal"
+    },
+    {
+      title: "Manual Testing",
+      desc: "Ensuring software quality through rigorous testing and bug tracking.",
+      iconName: "CheckCircle"
     }
   ],
   services: [
@@ -82,33 +98,33 @@ export const portfolioData = {
   ],
   projects: [
     {
-      title: "Summer Essential Store",
-      desc: "This project demonstrates a small e-commerce-style storefront built with Next.js App Router, Tailwind CSS, DaisyUI, and better-auth for email/password and Google authentication.",
-      tech: ["React", "Next.js", "DaisyUI","React Hooks", "Better Auth"],
+      title: "Summer Essential E-Commerce store",
+      desc: "A fully functional Todo application with authentication, CRUD operations, and a clean, responsive UI.",
+      tech: ["React", "Node.js", "Express.js", "MongoDB"],
       image: "https://i.ibb.co.com/ch6yGD2N/Project-1.jpg",
       link: "https://a-8-s-cart-jex8.vercel.app/",
       github: "https://github.com/Zakaria-info/a-8-s-cart",
     },
     {
-      title: "Dragon News",
-      desc: "A Modern News Web Application using NextJS, React Hook, Authentication and Secured Routing",
-      tech: ["React", "Next.js", "DaisyUI","React Hooks", "Authentication", "Secured Routing"],
+      title: "News Portal Web Application",
+      desc: "A demo e-commerce platform featuring product listing, cart system, and checkout flow.",
+      tech: ["React", "Node.js", "Express.js", "MongoDB"],
       image: "https://i.ibb.co.com/C5n8136x/Project-2.jpg",
       link: "https://dragon-news-mu-tan.vercel.app/",
       github: "https://github.com/Zakaria-info/Dragon-news"
     },
     {
       title: "GitHub Issue Tracker",
-      desc: " A professional, high-performance issue management dashboard built with a focus on clean UI/UX and seamless API integration. This project demonstrates the ability to handle real-world data fetching, state management, and responsive design using a modern utility-first CSS approach.",
-      tech: ["React", "Tailwind CSS", "React Hooks", "GitHub API","Authentication"],
+      desc: "A professional, high-performance issue management dashboard built with a focus on clean UI/UX and seamless API integration.",
+      tech: ["React", "Tailwind CSS", "React Hooks", "GitHub API"],
       image: "https://i.ibb.co.com/1YfMzfRm/Project-4.jpg",
       link: "https://github-issue-tracker-zakaria.netlify.app/",
       github: "https://github.com/Zakaria-info/Github_Issue_Tracker--A5",
     },
     {
       title: "Digital Tool Platform",
-      desc: "A modern, responsive web application built with React.js, designed to provide premium digital tools in one place. Users can explore products, manage cart items, and experience a clean, interactive UI.",
-      tech: ["HTML", "CSS", "JavaScript", "React-Toastify", "React Hooks"],
+      desc: "A modern, responsive web application built with React.js, designed to provide premium digital tools in one place.",
+      tech: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
       image: "https://i.ibb.co.com/LXpLpprM/Project-3.jpg",
       link: "https://digitool-zakaria.netlify.app/",
       github: "https://github.com/Zakaria-info/DigiTool-Platform",

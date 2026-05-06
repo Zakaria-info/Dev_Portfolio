@@ -8,7 +8,7 @@ const Hero = () => {
   const heroRef = useRef(null);
   const textRef = useRef(null);
   const imageRef = useRef(null);
-  const { profile } = portfolioData;
+  const { profile, contact } = portfolioData;
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -69,12 +69,12 @@ const Hero = () => {
             >
               View Projects
             </button>
-            <button 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            <a 
+              href={`mailto:${contact.email}`}
               className="px-8 py-3 border border-gray-600 rounded-lg font-bold hover:border-accent-blue hover:text-accent-blue transition-all flex items-center gap-2 group"
             >
-              Let's Collaborate <span className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform text-lg">↗</span>
-            </button>
+              Hire Me <span className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform text-lg">↗</span>
+            </a>
           </div>
         </div>
 

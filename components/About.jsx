@@ -54,7 +54,7 @@ const About = () => {
             <img 
               alt={profile.name} 
               className="w-full h-full object-cover transition-all duration-700 scale-110 group-hover:scale-100" 
-              src={profile.image} 
+              src={profile.aboutImage} 
             />
             <div className="absolute inset-0 bg-gradient-to-t from-dark-navy/80 via-transparent to-transparent opacity-60"></div>
           </div>
